@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tecnologias</title>
+    <title>Hobbies</title>
 
     <!-- JQUERY -->
     <script
@@ -21,7 +21,74 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
 
     
+    <style>
+        #main {
+            margin-top: 100px;
+        }
 
+        div.parallax {
+            margin: 40px;
+        }
+
+        .parallax {
+            border-radius: 10px;
+            background-image: url("/images/coding.jpg");
+            min-height: 200px; 
+            background-attachment: fixed;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #about {
+			background-color: #fff;
+			position: relative;
+			z-index: 2;
+		}
+		#about h2 {
+			font-size: 36px;
+			font-weight: bold;
+			text-align: center;
+			margin-bottom: 15px;
+		}
+		#about p {
+			font-size: 18px;
+			line-height: 1.5;
+			margin: 0 auto;
+			max-width: 800px;
+			padding: 0 50px;
+			text-align: justify;
+		}
+		#about::before {
+			content: "";
+			background-image: url(bg.jpg);
+			background-size: cover;
+			background-position: center;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: -1;
+			opacity: 0.5;
+		}
+        .video-container {
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top: 30px;
+			height: 0;
+			overflow: hidden;
+		}
+		.video-container iframe,
+		.video-container object,
+		.video-container embed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+    </style>
     
 </head>
 <body>
@@ -91,54 +158,46 @@
         <div class="menu-btn"></div>
     </header>
 
-    <div class="this-website-header">
-        <h2>Tecnologias Usadas</h2>
+  
+
+    <div id="main">
+        <section id="about">
+		<h2>Sobre Mim</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum, elit eu varius elementum,
+             lorem enim lacinia mi, ut blandit urna velit eget metus. Fusce pulvinar malesuada ante, in efficitur erat 
+             faucibus et. Nullam id ipsum nec lectus malesuada volutpat. Fusce ut vestibulum risus, vel suscipit tellus.</p>
+	</section>
+
+
+    <div class="parallax"></div>
+
+
+    <section id="about">
+		<h2>Objetivos</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum, elit eu varius elementum,
+             lorem enim lacinia mi, ut blandit urna velit eget metus. Fusce pulvinar malesuada ante, in efficitur erat 
+             faucibus et. Nullam id ipsum nec lectus malesuada volutpat. Fusce ut vestibulum risus, vel suscipit tellus.</p>
+	</section>
+
+
+    <div class="parallax"></div>
+
+    <section id="about">
+		<h2>Motivações</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum, elit eu varius elementum,
+             lorem enim lacinia mi, ut blandit urna velit eget metus. Fusce pulvinar malesuada ante, in efficitur erat 
+             faucibus et. Nullam id ipsum nec lectus malesuada volutpat. Fusce ut vestibulum risus, vel suscipit tellus.</p>
+	</section>
     </div>
 
-
-    <section class="hobbies-section">
-        
-        <h1>Tecnologias usadas no website</h1>
-        <div class="tech-info">
-            <div>
-                <h2>HTML</h2>
-                <img src="/images/html.png" alt="HTML">
-            </div>
-            <div>
-                <p>Usada para estruturar e formatar o conteúdo de todas as página web, 
-                    incluindo texto, imagens, vídeos, áudios e outros elementos multimedia.</p>    
-            </div>
-        </div>
-        <div class="tech-info">
-            <div>
-                <h2>CSS</h2>
-                <img src="/images/css.png" alt="CSS Image">
-            </div>
-            <div>
-                <p>Utilizada para definir a aparência e o layout de elementos em todas as páginas web.</p>
-            </div>
-        </div>
-        <div class="tech-info">
-            <div>
-                <h2>JAVASCRIPT</h2>
-                <img src="/images/JavaScript.png" alt="JavaScript Image">
-            </div>
-            <div>
-                <p>Usada principalmente para tornar as páginas da web interativas e dinâmicas.</p>
-            </div>
-        </div>
-
-
-        <h1>Padrões Usados</h1>
-        <div class="tech-info">
-            <div>
-                <h2>Padrão arquitetural cliente-servidor HTTP</h2>
-                <p>É uma forma comum de distribuição de sistemas de software na web.</p>    
-            </div>
-        </div>
-    </section>
     
-    
+
+    <hr>
+
+    <div class="video-container">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/PqWRGqIEW0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</div>
+
 
     <footer>
         <div class="social">

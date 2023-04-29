@@ -22,7 +22,40 @@
 
     
 
-    
+    <style>
+        .container {
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		.lab-list {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		.lab-item {
+			margin: 20px 0;
+			border: 1px solid #ddd;
+			padding: 20px;
+			background-color: #f9f9f9;
+		}
+
+		.lab-title {
+			font-size: 24px;
+			margin: 0 0 10px 0;
+		}
+
+        .lab-title a{
+            color: #0061FF;
+            text-decoration: none;
+		}
+
+		.lab-desc {
+			margin: 0;
+		}
+    </style>
 </head>
 <body>
 
@@ -92,51 +125,34 @@
     </header>
 
     <div class="this-website-header">
-        <h2>Tecnologias Usadas</h2>
+        <h2>Laboratórios</h2>
     </div>
 
 
-    <section class="hobbies-section">
-        
-        <h1>Tecnologias usadas no website</h1>
-        <div class="tech-info">
-            <div>
-                <h2>HTML</h2>
-                <img src="/images/html.png" alt="HTML">
-            </div>
-            <div>
-                <p>Usada para estruturar e formatar o conteúdo de todas as página web, 
-                    incluindo texto, imagens, vídeos, áudios e outros elementos multimedia.</p>    
-            </div>
-        </div>
-        <div class="tech-info">
-            <div>
-                <h2>CSS</h2>
-                <img src="/images/css.png" alt="CSS Image">
-            </div>
-            <div>
-                <p>Utilizada para definir a aparência e o layout de elementos em todas as páginas web.</p>
-            </div>
-        </div>
-        <div class="tech-info">
-            <div>
-                <h2>JAVASCRIPT</h2>
-                <img src="/images/JavaScript.png" alt="JavaScript Image">
-            </div>
-            <div>
-                <p>Usada principalmente para tornar as páginas da web interativas e dinâmicas.</p>
-            </div>
-        </div>
-
-
-        <h1>Padrões Usados</h1>
-        <div class="tech-info">
-            <div>
-                <h2>Padrão arquitetural cliente-servidor HTTP</h2>
-                <p>É uma forma comum de distribuição de sistemas de software na web.</p>    
-            </div>
-        </div>
-    </section>
+    <div class="container">
+		<ul class="lab-list">
+			<li class="lab-item">
+				<h2 class="lab-title"><a href="https://github.com/ULHT-PW/pw23-lab1">Laboratório 1: O meu primeiro website online</a></h2>
+				<p class="lab-desc">Neste laboratório, os alunos aprenderam os conceitos básicos do HTML e CSS, incluindo a estrutura de uma página HTML, formatação de texto, criação de listas e links, e estilização de páginas com CSS.</p>
+			</li>
+			<li class="lab-item">
+				<h2 class="lab-title"><a href="https://github.com/ULHT-PW/pw23-lab2">Laboratório 2: Website com Quizz 🔘 e CSS 🖌</a></h2>
+				<p class="lab-desc">Neste laboratório, os alunos aprenderam a usar os selectores CSS e tabelas.</p>
+			</li>
+			<li class="lab-item">
+				<h2 class="lab-title"><a href="https://github.com/ULHT-PW/pw23-lab3">Laboratório 3: Layouts baseados em flex e grid</a></h2>
+				<p class="lab-desc">Neste laboratório, os alunos aprenderam a criar layouts responsivos usando técnicas avançadas de CSS, incluindo o uso de media queries, flexbox e grid layout.</p>
+			</li>
+            <li class="lab-item">
+				<h2 class="lab-title"><a href="https://github.com/ULHT-PW/pw23-lab3">Laboratório 4: Web design responsivo</a></h2>
+				<p class="lab-desc">Neste laboratório, os alunos aprenderam a aplicar as técnicas aprendidas de design responsivo, efeitos e animações.</p>
+			</li>
+            <li class="lab-item">
+				<h2 class="lab-title"><a href="https://github.com/ULHT-PW/pw23-lab3">Laboratório 5/Projeto Parte I: Portfolio I ⛅</a></h2>
+				<p class="lab-desc">Neste laboratório, os alunos desenvolveram a primeira parte do portfolio 1.</p>
+			</li>
+		</ul>
+	</div>
     
     
 

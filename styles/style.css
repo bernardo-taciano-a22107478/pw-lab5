@@ -37,6 +37,7 @@ header .nav .menu {
   list-style: none;
 }
 
+
 .menu-item > a {
   color: white;
   font-size: 1em;
@@ -44,6 +45,7 @@ header .nav .menu {
   margin: 15px;
   padding: 25px 0;
 }
+
 
 .menu-item > a:hover {
   color: rgb(182, 182, 182);
@@ -351,11 +353,11 @@ footer .copyright {
 .box {
   position: relative;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: 5fr 4fr;
   grid-template-areas: 
-  "form info"
-  "form map";
+  "info form"
+  "map form";
   grid-gap: 20px;
 }
 
@@ -413,6 +415,7 @@ footer .copyright {
 
 
 .inputBox input[type="submit"] {
+  border-radius: 5px;
   background-color: #0061FF;
   color: white;
   border: none;
@@ -502,8 +505,8 @@ footer .copyright {
     grid-template-rows: auto;
     grid-template-areas: 
     "form"
-    "info"
-    "map";
+    "map"
+    "info";
   }
 
   .formBox .row50 {
@@ -955,6 +958,7 @@ footer .copyright {
 /* ESTAS TECNOLOGIAS WEBSITE */
 
 .this-website-header {
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -995,7 +999,7 @@ footer .copyright {
 .tech-info p{
   text-align: justify;
   font-size: 1.25em;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .tech-info img{
@@ -1093,6 +1097,7 @@ th:last-child {
   justify-content: center;
   align-items: center;
   margin: auto;
+  text-align: center;
 }
 
 .contentContainer .card {
@@ -1127,5 +1132,94 @@ th:last-child {
 @media (max-width: 991px) {
   .contentContainer {
     flex-direction: column;
+  }
+}
+
+
+
+@media (max-width: 991px) {
+  .home {
+    gap: 50px;
+    flex-direction: column;
+  }  
+  .home-left {
+    padding-top: 220px;
+    width: 300px;
+  }
+
+  .home-left h2 {
+    font-size: 1.15em;
+  }
+
+  .home-right {
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 991px) {
+  .this-website-header h2 {
+    font-size: 3em;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .hobbies-section {
+    padding: 50px 0;
+  }
+  .hobbies-section h1{
+    padding: 0 10px;
+    text-align: center;
+    font-size: 2.5em;
+  }
+  .tech-info {
+    width: 250px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 991px) {
+  td,th {
+    padding: 25px 10px;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .education-header h2 {
+    font-size: 3.5em;
+  }
+}
+
+@media (max-width: 991px) {
+  .skills h1 {
+    font-size: 4em;
+  }
+  .skills-content {
+    padding: 50px 0;
+  }
+
+  .skills-text h1 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 991px) {
+  .hobbies-header h1 {
+    font-size: 4em;
+  }
+  .hobbies-info {
+    width: 320px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 991px) {
+  #about {
+    padding-top: 10px;
+  }
+  .blogContainer .row .header p {
+    font-size: 1.25em;
   }
 }
